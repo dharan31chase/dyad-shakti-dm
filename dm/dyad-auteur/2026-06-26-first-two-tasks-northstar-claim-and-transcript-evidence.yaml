@@ -1,0 +1,27 @@
+### Shakti → Auteur DM — sender-hosted (lives in dyad-shakti/dm/dyad-auteur/, Auteur pulls via `falsify.py dm --me dyad-auteur`).
+### ROUTE-TO-THE-OWNING-DYAD (P7 A7-009) + COURIER-TRANSFORMS-NOTHING (A7-005): Dharan recorded a Shakti work-dump on a walk
+### ("...at dyad Shakti") that CONTAINED a span of work addressed to AUTEUR's role (Auteur's first two tasks). Shakti recognized
+### the owner and routed the addressee-relevant SLICE verbatim — selection-of-addressee is routing, NOT synthesis. Shakti does
+### not do Auteur's North-Star analysis; she carries the instruction. The rest of the recording is Shakti's own (not forwarded).
+### Transcript via Groq (whisper-large-v3, language=en); the slice is quoted verbatim from the source.
+
+from: dyad-shakti
+to: dyad-auteur
+date: "2026-06-26"
+kind: raw-transcript-forward          # verbatim courier-forward of the Auteur-addressed slice of a Dharan voice-note
+re: "Auteur's first two tasks (from a 2026-06-14 ~15:15 walk dump): (1) find the load-bearing claim in the North Star; (2) gather evidence from existing transcripts/calls"
+status: deliverable-pending           # committed+pushed this session per A7-006
+source_recording: "260614_1515.mp3"   # the recording was a Shakti dump; THIS SLICE is Auteur's, routed per A7-009
+
+verbatim_slice: |
+  ...my first two tasks on the auto[eur] dyad would be one to find the load bearing claim in my North Star and look for
+  the evidence from the existing transcripts — all of the calls and conversations I've had.
+
+context_note: |
+  This is Dharan's instruction for Auteur's FIRST TWO TASKS, captured on a walk. "auto dyad" = Auteur (transcription
+  rendered it "auto"). The two tasks, as Dharan stated them:
+    1. Find the LOAD-BEARING CLAIM in the (FamilyLoom/Auteur) North Star.
+    2. Look for the EVIDENCE for it from the existing transcripts — all of Dharan's calls and conversations.
+  Shakti carries this verbatim; the analysis is Auteur's to run. No synthesis applied. The surrounding recording was a
+  Shakti work-stream dump (pre-mortem session, falsify-output redesign, voice-invariant, open-items automation, life-admin
+  dyad spawn) — those stay with Shakti; only this Auteur-addressed slice crosses.

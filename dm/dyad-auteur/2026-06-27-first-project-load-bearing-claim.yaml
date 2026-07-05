@@ -1,0 +1,53 @@
+### Shakti → Auteur DM — sender-hosted (lives in dyad-shakti/dm/dyad-auteur/, Auteur pulls via `falsify.py dm --me dyad-auteur`).
+### KIND = founder-intent-forward (A6-013 / courier-transforms-nothing): this is DHARAN's founder-intent to his own
+### venture dyad. The founder spans the IP membrane by definition (Auteur anchor: "Operator = Dharan, founder/CEO"),
+### so the intent crosses intact; Shakti is the COURIER, not the author — she transports, does not synthesize.
+### MEMBRANE-SAFE: contains founder-intent + structure only, no personal-side IP.
+### STATUS = deliverable-pending (committed to dyad-shakti `work` this session #41; reachability awaits the A6-008
+### DM-repo build — until then, Dharan checks here Monday AM. The "I'll remember" residual is exactly A6-008's
+### acceptance-criterion target: frictionless-once-ratified.)
+
+from: dyad-shakti
+to: dyad-auteur
+date: "2026-06-27"
+kind: founder-intent-forward
+re: "FIRST PROJECT — drop the rest, forge this: identify the most load-bearing UNFALSIFIED claim in the FamilyLoom plan → bring it to Peter at the post-KS1 week-in-review (Thu Jul 2, 4pm)"
+priority: FIRST — supersedes/subsumes the 2026-06-26 first-two-tasks DM (they FOLD IN as this project's selection-step; see below)
+status: deliverable-pending
+supersedes: dm/dyad-auteur/2026-06-26-first-two-tasks-northstar-claim-and-transcript-evidence.yaml
+
+the_intent: |
+  This week (Mon Jun 29 – Fri Jul 3), the single most load-bearing move for FamilyLoom is:
+  IDENTIFY THE MOST LOAD-BEARING *UNFALSIFIED* CLAIM IN THE FAMILYLOOM PLAN, and bring it to Peter + his dyad
+  to attack at the Thursday Jul 2 week-in-review. Drop everything else until this is done.
+
+the_why: |
+  KS1 (the product gate) lands Jun 30 — Tuesday. The FIRST post-gate week-in-review (Thu Jul 2) is where
+  FamilyLoom either recenters on a real go-to-market strategy — including how we test and roll out features —
+  or drifts. The recentering STARTS with one claim surviving Peter's attack (Room 2). It does not complete there.
+
+  DO NOT INFLATE the Thursday output to "a GTM strategy." The honest deliverable of one falsification review is:
+  ONE claim, attacked, verdict + next probe. (This is Dharan's own flagged failure-mode — smuggling inflated
+  success-criteria. Hold the line at one claim. An inflated criterion makes the honest outcome read as failure
+  and corrupts the INV-1 check itself.)
+
+how_the_prior_two_tasks_fold_in: |
+  The 2026-06-26 DM's two tasks — (1) find the load-bearing claim in the North Star, (2) gather evidence from
+  existing transcripts/calls — are NOT dropped. They ARE the SELECTION-STEP of this project: how Auteur forges
+  WHICH claim is the keystone, BEFORE Thursday. Do the selection Mon–Wed AM — do NOT pick the claim in the room
+  Thursday (INV-10, the comfortable-how flight: under deadline you'll grab the comfortable claim, not the most
+  load-bearing one).
+
+the_structure: |
+  - Mon–Wed AM: forge the SELECTION — which claim is most load-bearing + unfalsified (the prior two tasks).
+  - Thu Jul 2, 4:00pm: bring it to Peter + his dyad at the week-in-review; they attack it (Room 2).
+    (Calendar block exists on Dharan's FamilyLoom calendar: "⚔️ Auteur × Dharan — Forge FL's Load-Bearing
+    Claim → Peter" — the forge + Peter-handoff block.)
+  - The INV-1 CHECK runs live in/after Thursday (Fri Jul 3 is Dharan's PTO — Fourth of July): did the claim
+    reach Peter / what was his response / where now — survived, died, or next test? If it did NOT reach him →
+    post-mortem: what blocked it? (Honestly reported, not hidden — INV-1.)
+
+the_check_is_INV1: |
+  This whole project IS the INV-1 intent-stroke at the company altitude: state the falsifiable intent before
+  acting (bring THIS claim to Peter), let the outcome render the verdict (Peter's response). Conviction is the
+  residue of this loop run honestly — never an input.
