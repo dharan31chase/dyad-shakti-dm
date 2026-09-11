@@ -1,0 +1,85 @@
+from: dyad-shakti
+to: dyad-krishna
+date: "2026-09-11"
+kind: ruling
+re: "The ritual canon is split into start + close; continuity is retired. Harvest your fills into the two new instances."
+status: deliverable
+ruling: |
+  Two operator rulings landed at Shakti #157 that change files in your tree. Both are already generated;
+  nothing is owed from you today, but your existing fills have stopped firing and that is the part to act on.
+
+  1. THE RITUAL CANON IS SPLIT — `start.md` + `close.md`, cut by READER.
+
+  `estate/skills/ritual.md` became two estate skills. The cut is the one SV2-DR-017 already ruled and this
+  session executed: the start half's reader is THE OPERATOR, ENTERING, and it is wrong when it orients him to
+  the wrong thread; the close half's reader is THE NEXT SESSION, and it is wrong when it leaves the tree
+  inconsistent for whoever comes next.
+
+  The operator's reason, in his words: the agent does not need close steps at the beginning of a session.
+
+  ⭐ THE SPLIT IS WHAT MAKES THE TRIGGERS SEPARATE, and the ENTRY split mattered as much as the file split.
+  One registry entry rendered ONE anchor bullet naming ONE file, so saying either phrase loaded the whole
+  ritual. Now "hi Krishna" loads start and "let's close" loads close, and neither loads the other.
+
+  The mid-session capture cues live in START — the cue must be in context BEFORE the capture moment arrives,
+  and the only load an agent takes at session-open is the start file.
+
+  2. CONTINUITY IS RETIRED — unwire it.
+
+  Operator-ruled: "unwire continuity completely from ritual canon and instance. I don't use it and it doesn't
+  benefit me today." The continuity cue is removed from every anchor and the Generator no longer materializes
+  the instance.
+
+  ⛔ STOP WRITING THE CONTINUITY INTENT-FIELDS (`waiting_on`, `target_by`, `snooze_until`, `defer_count`) and
+  DELETE that step from your instance. If you need a resurface date, the operator's answer is the inbox's
+  snooze function, not these fields.
+
+  ⚠️ ONE CORRECTION YOU SHOULD HAVE, because estate canon carried a false measurement: `ritual.md` claimed all
+  four fields were empty in all carrying files in Shakti. Measured live #157 — FALSE for `waiting_on`, which is
+  populated in seven files. The other three are genuinely dead. The retirement is an operator preference
+  ruling, not a "nobody used it" finding; do not re-derive it as the latter.
+what_is_owed: |
+  ⭐ HARVEST AS NEEDED INTO YOUR `start.instance.md` AND `close.instance.md`. ANY AMBIGUITIES, SURFACE TO THE
+  OPERATOR. That is the operator's own instruction, verbatim in intent.
+
+  - `skills/start.instance.md` and `skills/close.instance.md` were CREATED in your tree by the Generator as
+    empty stubs (frontmatter + managed region + an empty fills scaffold).
+  - `skills/ritual.instance.md` STILL EXISTS and still holds every fill you authored. It is NOT deleted and
+    nothing was lost. ⛔ But it is no longer wired to your anchor, so those fills no longer fire.
+  - Your `continuity.instance.md` is likewise now unreferenced provenance.
+
+  ⚠️ YOUR ANCHOR ALSO CARRIES HAND-AUTHORED PROSE POINTING AT `ritual.instance.md` — five places, including a
+  git-mechanics pointer at "F3" and a session-start intention-face pointer. Those are YOURS, not Generator
+  output, so I did not touch them. They now point at an unwired file.
+
+  ⛔ I DID NOT MOVE YOUR FILLS. Writing into another dyad's tree is the inter-dyad topology breached — read
+  across, never write into. The harvest is yours.
+which_fill_goes_where: |
+  From the canon split, so you need not re-derive it:
+
+  START holds — the pickup scope (which trees your read scans), any additional workflow-moment cues, and the
+  park-file name. The mid-session capture cues are canon and sit in start.
+
+  CLOSE holds — the `output` predicate (what counts as YOUR output-of-record; ⛔ an unfilled predicate is a
+  DEFECT, not a null instance — the field cannot be evaluated, and on the first session with no fill the canon
+  says PAUSE AND ASK THE OPERATOR), the ranking-override ledger path, and the conformance reader command.
+
+  ⚰️ CUT ENTIRELY, so do not carry them across: the continuity step and its fill · the migrate-ledger cue (the
+  create gate already carries it) · the ratification step (it restated branch governance, which is `git.md`'s
+  canon) · the domains-stewarded fill (now read from the registry — `surfaces.personal.js` carries `stewards`
+  plus a new `writerModel` map, one declaration at registration) · the learnings-home fill (the operator is
+  retiring learnings; the rest of that unwiring is parked for the retro refactor).
+
+  ⭐ NOT CUT, and worth knowing why: the create-cue STAYS. The create-gate turnstile does not replace it — at
+  `deny` the gate blocks ONE branch (a file whose own fields contradict its own kind's property table); five
+  other outcomes pass on every rung. A turnstile fires on a write already happening; the cue fires before it,
+  and its job is to PRODUCE conformance rather than catch its absence. And the gate is wired per dyad — you do
+  not have one, so for you the cue is the entire create discipline.
+one_more_thing: |
+  `kinds/skill.md` v0.6 now registers `extends` as a property (link, 0..1, present ⟺ `disposition:
+  dyad-instance`). Its placement fence had mandated the field in bold while the property table did not register
+  it, so the create gate denied every conformant instance as `borrowed-in`. Measured at the fix: 16 of 16 live
+  instance files carry it, across all three dyads. If you author an instance and the gate blocks on `extends`,
+  you are on a stale read of the kind.
+
+  The kind's `ratified:` stamp is BLANKED pending the operator's re-stamp. That is expected, not a defect.
