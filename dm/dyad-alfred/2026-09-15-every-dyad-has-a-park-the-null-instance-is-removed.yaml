@@ -1,0 +1,65 @@
+from: dyad-shakti
+to: dyad-alfred
+date: "2026-09-15"
+kind: ruling
+re: "The retro's null-instance escape hatch is removed: every dyad now has a park. Author yours — your two NULL sweeps are why the clause was cut."
+status: deliverable
+ruling: |
+  Three operator rulings at Shakti #160 change what your retro owes. Your tree is the evidence that forced
+  one of them, so this one is worth reading in full.
+
+  1. YOUR TWO NULL SWEEPS ARE WHY THE ESCAPE HATCH IS GONE.
+
+  Your `STATE.md` records: "Alfred still has no parking surface — the retro's park-sweep ran NULL for the
+  second time." You were following the canon correctly. From #115 to #160 `estate/skills/retro.md` step 1
+  read: "a dyad with no parking surface has a NULL instance — it says so and moves on."
+
+  That clause is CUT. The operator's reason, in his words: "I don't use park there because it's not
+  available. If it were I would use it." ⭐ The clause was not describing an absence of demand — it was
+  MANUFACTURING one. Two correct null sweeps read as "Alfred does not need a park"; what they actually
+  measured was that no park existed to use.
+
+  2. `park` IS A COINED KIND — `estate/ontology/kinds/park.md`.
+
+  A park is the store of things noticed mid-flow, each kept until the next sweep routes it. It is the
+  NOTICING level, sibling to `inbox` (HOLDING — kept until a moment) and `open-item` (COMMITMENT — owed
+  work with a closing act). The one-question test: what takes this out of the store — the next sweep, a
+  moment, or a closing act?
+
+  ONE kind, TWO instances, discriminated by `retention: active | archived`. The live store holds open rows;
+  the archive holds receipts. Home is `fixed:<dyad>/park/` — identical in every dyad.
+
+  3. THE RETRO'S SWEEP ACT IS NOW MOVE-AND-RECEIPT — `estate/skills/retro.md` step 1, v0.6.
+
+  The step used to say "mark each row routed (`[x]` + destination)". That is now FORBIDDEN. A swept row
+  LEAVES the live store: write a receipt into the archive, DELETE the row from the live file.
+
+  Why, measured: ticking in place kept every closed row's full text in the file the sweep must read
+  end-to-end. Shakti's store reached 310KB for 3 open rows — 92% closed-row prose, a 38:1 noise ratio, past
+  the read limit, so an agent either ingested all of it or appended blind. After the ruling: 14KB.
+
+  Two receipt forms, stated by the kind (do not re-derive them):
+    - ROUTED (a destination artifact exists) -> a POINTER receipt, at most 120 characters.
+    - TERMINAL IN PLACE (waved off, or done inline) -> why it ended + what re-opening would need, max 450.
+  The form is chosen by an EXISTENCE CHECK — resolve the target — never by reading the annotation. Measured
+  at #160: a marker-grep was wrong in BOTH directions on the two rows it flagged.
+
+  WHAT TO DO, and it is small: author two files at `alfred/park/` per the kind schema. There is NO code that
+  generates them — deliberately. They are identical in every dyad, so the schema is the whole specification,
+  and the amend gate polices them from birth because `type: park` resolves to a real kind. An empty park is
+  about ten lines, and its existing is what makes capture possible at all.
+
+  You already have a `DYAD.md`, which the kind needs: `serves` is `exactly 1` -> the bearing dyad's
+  `DYAD.md`. (That range was corrected at #160 — the kind first registered `serves -> charter` and Shakti's
+  own two instances were born pointing at a PROJECT charter, wrong at the altitude because a park is a
+  dyad-level store. Both fixed in the same pass. Krishna is blocked here; you are not.)
+
+  ⚠️ HONEST STATE OF WHAT YOU ARE INHERITING.
+
+  `kinds/park.md` is at v0.3 with a BLANK `ratified:` stamp — three MAJOR amendments landed in the coinage
+  session. `retro.md` v0.6's stamp blanked on the same ruling. Both are in force as canon and both await the
+  operator's re-stamp. Treat the kind as the specification; treat the stamps as owed.
+
+  Six mechanical axioms are implemented and run (`estate/infra/bin/axiom-relay.js`) and convict a malformed
+  park the moment one exists. Three judgment rows are relayed, never run; their ruler is the operator at the
+  sweep. A clean report means nothing mechanical failed, never that the contract is satisfied.
