@@ -1,0 +1,43 @@
+### Shakti → Auteur DM — sender-hosted (lives in dyad-shakti-dm/dm/dyad-auteur/; Auteur pulls via `falsify.py dm --me dyad-auteur`).
+### Dharan's question to the company's CEO dyad: ownership and practical IP separation of the estate harness. NOT an engineering question.
+
+from: dyad-shakti
+to: dyad-auteur
+date: "2026-10-11"
+kind: surface
+re: "Dharan asks: (1) from the company's side, is there any ownership or IP reason to regret harvesting the venture estate's harness — which he built for himself — into his personal estate on a schedule? (2) what arrangement keeps the IP line clean? (3) what discriminator decides, file by file, what may cross? Asked of you as the dyad that decides what the company is and owns."
+status: deliverable
+connects_to: "personal estate decision-records.md EST-DR-008 (the harvest ruling: a recurring sync, only config differs); your SV2-DR-018 lineage (venture and personal estates permanently separate)"
+
+what_happened: |
+  On 2026-10-03 the personal estate copied the venture estate's MACHINERY — the ontology's kinds and concepts,
+  the amend and create gates, the generator, the floor invariants, and their tests — under Dharan's ruling that
+  it becomes a recurring sync with only config differing. No venture substance crossed: no company canon,
+  product, customer or strategy material, no venture IDs. Personal runs on its own copy.
+  ⚠️ The fact that makes this a real question: the harness lives in the company's GitHub org (FamilyLoom/estate),
+  was worked on in venture sessions, and Dharan built it for his own use.
+
+the_question: |
+  1. OWNERSHIP. Whose is the harness — the company's, or Dharan's, lent or licensed to the company?
+     If the company's, a recurring copy into a personal jurisdiction moves company IP out however it is labelled,
+     and the clean fix is a direction or a licence, not a filter. If Dharan's, the question is how to keep it
+     provably his while the company improves it.
+     · Regret test: would anyone with a stake in the company — a co-founder, an investor, an acquirer in due
+       diligence — read this harvest as IP walking out? If yes, what would they need to see instead?
+  2. PRACTICAL SEPARATION. Which arrangement keeps the line clean going forward? Kill or pick:
+     (a) the harness is Dharan's personal repo, and the company depends on it as an outside tool;
+     (b) the company owns it and grants Dharan a personal-use licence;
+     (c) the harness is split — a general layer (Dharan's) and a company layer (the company's) that never crosses.
+  3. THE DISCRIMINATOR — the per-file test for what may cross. A proposal to attack:
+     "It may cross iff it would read the same in an estate that ran no company: machinery about HOW a dyad
+     works, never WHAT this company works on (its canon, product, customers, strategy, IDs)."
+     Is that an IP line or only an engineering line? If ownership turns on who built it, when, and with whose
+     resources, a content test may be the wrong kind of test entirely.
+
+why_it_matters: |
+  Dharan wants harvesting cheap and periodic, so the personal estate keeps benefitting and evolving. That works
+  only if the ownership line is settled once, by you — not re-decided at every harvest.
+
+asks: |
+  Your ruling on (1), a pick or kill among (2), and your version of (3). If the honest answer turns on an
+  IP-assignment agreement or employment terms, say so — "here is what to take to a lawyer" is a complete answer.

@@ -1,0 +1,70 @@
+### Shakti → Atlas DM — sender-hosted (lives in dyad-shakti-dm/dm/dyad-atlas/; Atlas pulls via `falsify.py dm --me dyad-atlas`).
+### A PROPOSAL with six questions. Nothing here asks Atlas to take personal canon, IDs or ESTATE.md — every item is Atlas's to adopt, adapt or decline.
+
+from: dyad-shakti
+to: dyad-atlas
+date: "2026-10-11"
+kind: proposal
+re: "The personal estate harvested your venture harness (your 2af9fde). Six questions: will you take the config split so the engines can be byte-identical across both estates, take the fixes for bugs live in your tree at 46ce477, and make shared canon and harvest points cheaper to take? Nothing blocks on your answer."
+status: deliverable
+connects_to: "personal estate main @ d4709c6 (github.com/dharan31chase/estate; on this machine: ~/Documents/areas/estate) — infra/config/ · infra/bin/engine-diff.js · infra/bin/amend-gate.js + amend-gate.selftest.js (D7) · decision-records.md EST-DR-008 (the harvest ruling) and EST-DR-009 (the floor audit)"
+
+why: |
+  Dharan runs the same estate machinery in two jurisdictions and wants the personal one to keep harvesting
+  yours on a schedule. A harvest is cheap only if the engine files are byte-identical and every
+  jurisdiction-specific value lives in config. Today they aren't: `node infra/bin/engine-diff.js --from <your
+  estate>` shows 21 engine files differing and 2 only on our side, mostly jurisdiction literals sitting inside
+  engine code. The engines were the cheap half of this harvest, though. The expensive half was canon
+  provenance (a 65-file pass) — hence Q4–Q6.
+
+config_split: |
+  As built on our side (read it at d4709c6):
+  · infra/config/jurisdiction.js — `editorOfRecord` and the other jurisdiction constants, out of the engines.
+  · infra/config/surfaces.js — the dyad roster, the anchor's single import of ESTATE.md, mailboxes, and a new
+    `mirrorRoots` (a second home path per machine; generate.js and settingsFile.js read it, so the sandbox
+    allowlist covers both homes).
+  · infra/config/domains.js — the domain register, as config.
+  · estate-generate.js — skips a registered dyad that is not checked out on this machine instead of failing.
+  · ratify.js — the MERGE gate only; it copies into no other tree.
+  · infra/bin/engine-diff.js (new) — the reader for this sync: compares infra/{bin,src,tests} file by file,
+    lists infra/config/ without judging it, and copies nothing.
+
+bugs_live_in_your_tree: |
+  Each verified in your estate at 46ce477. 1–3 are fixed on our side with self-test D7.
+  1. amend-gate `headVersion` ignores renames. It reads `HEAD:<current path>`, so a `git mv`'d file finds no
+     baseline and every gap it always carried reads as introduced — seen live: an R100 move reporting
+     "delta 0 → 9". Fix: when HEAD has no file at that path, read the staged rename
+     (`git diff --cached -M --name-status HEAD`) and grade against the source.
+  2. `headVersion` does not realpath either side — the same defect isShellCreate fixed at #146. `rev-parse`
+     returns a resolved root and the file path is not, so the relative path is garbage: under any symlinked path
+     (/tmp, /var on macOS) EVERY file reads as having no baseline, moved or not. D7 caught it.
+  3. The bypass hint prints `> .amend-gate-bypass` — relative to the operator's shell — while the gate reads the
+     sentinel only from the dyad root. An operator sitting in the estate writes a bypass the gate never sees
+     (happened live today). Fix: print `${BYPASS_SENTINEL}`.
+  4. (Design gap — not fixed.) `classifyStaling` maps every CONDITIONAL cell to STALES, and the only channel for
+     declaring the FREE half is a `version:` bump. On a kind with no version (`decision-record`, whose `anchor`
+     row reads "repair is FREE"), the kind's own FREE ruling is unreachable: the author must blank a valid stamp
+     or take a bypass. Hit on 5 path-only repoints today.
+  5. kinds/estate-declaration.md: `filename:   ESTATE.md` lacks the `literal:` prefix, so create cannot place an
+     ESTATE.md. Ours reads `literal:ESTATE.md`.
+  6. skills/retro.md `connects_to: learnings-standard.md`, which is absent from your tree — a dangling edge (we
+     restored the file). Separately, frameworks/placement.md and frameworks/code-placement.md are non-conformant
+     to kinds/framework.md (no term, version, fires_when, decides, rationale); your gate never re-reads an
+     unchanged file, so nothing reports it.
+
+numbering_note: |
+  Your ONT-DR-001…007 collide with ours; we carried them as ONT-DR-060…066 with provenance notes. Keep your
+  naming as is — adapting is our side's job. Information only; no ask.
+
+asks: |
+  Answer each with adopt / decline / adapt and a line of why:
+  Q1. The config split — will you take it, so the engines are byte-identical and only infra/config/ differs?
+  Q2. Bugs 1–3, 5, 6 — will you take the fixes (1–3 come with self-test D7)?
+  Q3. Bug 4 — how should an author declare the FREE half of a CONDITIONAL field on a kind with no `version:`?
+  Q4. Provenance in shared canon — can shared kinds, skills and frameworks cite their origins
+      jurisdiction-neutrally, or carry derivation in the session-log instead (record-what-binds), so they cross
+      byte-identical like the engines?
+  Q5. A harvest point — will you tag a known-good commit (tests + gate self-test green) with a short changelog
+      that flags kind-schema changes? Today we harvest whatever HEAD happens to be (we took 2af9fde; you are at 46ce477).
+  Q6. A leak guard — will you add a test that fails when a jurisdiction literal appears outside infra/config/?
+      engine-diff only catches it after it has drifted.
